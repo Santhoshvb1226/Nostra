@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nostra - E-Commerce</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- OFFER BAR -->
+
+    <div class="offer-bar">
+
+        <p>
+            Sign Up and Get 20% OFF on your first Order
+        </p>
+
+        <button onclick="closeOffer()">X</button>
+
+    </div>
+
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar">
+
+        <h1 class="logo">
+            Nostra
+        </h1>
+
+        <div class="nav-links">
+
+            <a href="index.html">Home</a>
+
+            <a href="#new-arrivals">New Arrival</a>
+
+            <a href="#most-wanted">Most Wanted</a>
+
+            <a href="collections.html">Collections</a>
+
+            <a href="contact.html">Contact Us</a>
+
+        </div>
+
+
+        <button class="menu-btn"
+                onclick="openMenu()">
+
+            ☰
+
+        </button>
+
+    </nav>
+
+
+    <!-- MOBILE MENU -->
+
+    <div class="mobile-menu"
+         id="mobileMenu">
+
+        <button onclick="closeMenu()"
+                class="close-btn">
+
+            X
+
+        </button>
+
+        <a href="index.html">Home</a>
+
+        <a href="#new-arrivals"
+           onclick="closeMenu()">
+            New Arrival
+        </a>
+
+        <a href="#most-wanted"
+           onclick="closeMenu()">
+            Most Wanted
+        </a>
+
+        <a href="collections.html">
+            Collections
+        </a>
+
+        <a href="contact.html">
+            Contact Us
+        </a>
+
+    </div>
+
+
+    <!-- HERO SLIDER -->
+
+    <section class="hero">
+
+        <img id="heroImage"
+             src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1200&q=80"
+             alt="Fashion">
+
+        <div class="hero-overlay">
+
+            <button class="arrow left"
+                    onclick="previousSlide()">
+                ❮
+            </button>
+
+            <div class="hero-content">
+
+                <h2>
+                    Level up your style
+                </h2>
+
+                <p>
+                    Summer Collections
+                </p>
+
+                <button onclick="location.href='collections.html'">
+                    Shop Now →
+                </button>
+
+            </div>
+
+            <button class="arrow right"
+                    onclick="nextSlide()">
+                ❯
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- BRANDS -->
+
+    <section class="brands">
+
+        <h2>
+            Brands
+        </h2>
+
+        <div class="brand-container">
+
+            <div class="brand">
+                <h3>Adidas</h3>
+                <p>Sport Fashion</p>
+            </div>
+
+            <div class="brand">
+                <h3>Nike</h3>
+                <p>Just Do It</p>
+            </div>
+
+            <div class="brand">
+                <h3>Puma</h3>
+                <p>Forever Faster</p>
+            </div>
+
+            <div class="brand">
+                <h3>Zara</h3>
+                <p>Fashion</p>
+            </div>
+
+            <div class="brand">
+                <h3>H&M</h3>
+                <p>Fashion</p>
+            </div>
+
+            <div class="brand">
+                <h3>Levi's</h3>
+                <p>Original</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- EXPERIENCE -->
+
+    <section class="experience">
+
+        <div class="experience-title">
+
+            <div>
+
+                <h2>
+                    We Provide Best
+                </h2>
+
+                <h2>
+                    Customer Experience
+                </h2>
+
+            </div>
+
+            <p>
+                We make sure our customers receive
+                the best shopping experience.
+            </p>
+
+        </div>
+
+
+        <div class="experience-container">
+
+            <div class="experience-card">
+
+                <div class="icon">
+                    😊
+                </div>
+
+                <h3>
+                    Satisfaction Guarantee
+                </h3>
+
+                <p>
+                    We provide quality products
+                    for our customers.
+                </p>
+
+            </div>
+
+
+            <div class="experience-card">
+
+                <div class="icon">
+                    🛍️
+                </div>
+
+                <h3>
+                    New Arrival Everyday
+                </h3>
+
+                <p>
+                    Discover new products
+                    every day.
+                </p>
+
+            </div>
+
+
+            <div class="experience-card">
+
+                <div class="icon">
+                    🚚
+                </div>
+
+                <h3>
+                    Fast & Free Shipping
+                </h3>
+
+                <p>
+                    Fast delivery directly
+                    to your doorstep.
+                </p>
+
+            </div>
+
+
+            <div class="experience-card">
+
+                <div class="icon">
+                    🔒
+                </div>
+
+                <h3>
+                    Secure Payment
+                </h3>
+
+                <p>
+                    Your payment information
+                    is completely secure.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- NEW ARRIVALS -->
+
+    <section class="products-section"
+             id="new-arrivals">
+
+        <div class="section-title">
+
+            <h2>
+                New Arrivals
+            </h2>
+
+            <a href="collections.html">
+                View All →
+            </a>
+
+        </div>
+
+
+        <div class="product-container">
+
+
+            <!-- PRODUCT 1 -->
+
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <img
+                    src="https://images.unsplash.com/photo-1603252109303-2751441dd157?auto=format&fit=crop&w=500&q=80"
+                    alt="Shirt">
+
+                    <span class="new">
+                        New
+                    </span>
+
+                    <button class="heart"
+                            onclick="addFavourite(this)">
+                        ♡
+                    </button>
+
+                </div>
+
+                <h3>
+                    Formal White Shirt
+                </h3>
+
+                <p>
+                    ₹799
+                </p>
+
+            </div>
+
+
+            <!-- PRODUCT 2 -->
+
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <img
+                    src="https://images.unsplash.com/photo-1598033129183-c4f50c736f10?auto=format&fit=crop&w=500&q=80"
+                    alt="Shirt">
+
+                    <span class="new">
+                        New
+                    </span>
+
+                    <button class="heart"
+                            onclick="addFavourite(this)">
+                        ♡
+                    </button>
+
+                </div>
+
+                <h3>
+                    White Shirt
+                </h3>
+
+                <p>
+                    ₹899
+                </p>
+
+            </div>
+
+
+            <!-- PRODUCT 3 -->
+
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <img
+                    src="https://images.unsplash.com/photo-1503341504253-dff4815485f1?auto=format&fit=crop&w=500&q=80">
+
+                    <span class="new">
+                        New
+                    </span>
+
+                    <button class="heart"
+                            onclick="addFavourite(this)">
+                        ♡
+                    </button>
+
+                </div>
+
+                <h3>
+                    Party Black T-Shirt
+                </h3>
+
+                <p>
+                    ₹999
+                </p>
+
+            </div>
+
+
+            <!-- PRODUCT 4 -->
+
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <img
+                    src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?auto=format&fit=crop&w=500&q=80"
+                    alt="Fashion">
+
+                    <span class="new">
+                        New
+                    </span>
+
+                    <button class="heart"
+                            onclick="addFavourite(this)">
+                        ♡
+                    </button>
+
+                </div>
+
+                <h3>
+                    Casual Summer Wear
+                </h3>
+
+                <p>
+                    ₹1,099
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- MOST WANTED -->
+
+    <section class="products-section"
+             id="most-wanted">
+
+        <div class="section-title">
+
+            <h2>
+                Most Wanted
+            </h2>
+
+            <a href="collections.html">
+                View All →
+            </a>
+
+        </div>
+
+
+        <div class="product-container">
+
+
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <img
+                    src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=500&q=80">
+
+                    <span class="sale">
+                        Sale
+                    </span>
+
+                    <button class="heart"
+                            onclick="addFavourite(this)">
+                        ♡
+                    </button>
+
+                </div>
+
+                <h3>
+                     Summer Black Jacket
+                </h3>
+
+                <p>
+                    ₹1,299
+                </p>
+
+            </div>
+
+
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <img
+                    src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=500&q=80">
+
+                    <span class="sale">
+                        Sale
+                    </span>
+
+                    <button class="heart"
+                            onclick="addFavourite(this)">
+                        ♡
+                    </button>
+
+                </div>
+
+                <h3>
+                    Light White Shirt
+                </h3>
+
+                <p>
+                    ₹899
+                </p>
+
+            </div>
+
+
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <img
+                    src="https://images.unsplash.com/photo-1592878904946-b3cd8ae243d0?auto=format&fit=crop&w=500&q=80">
+
+                    <span class="sale">
+                        Sale
+                    </span>
+
+                    <button class="heart"
+                            onclick="addFavourite(this)">
+                        ♡
+                    </button>
+
+                </div>
+
+                <h3>
+                    Casual Blue Printed Coat
+                </h3>
+
+                <p>
+                    ₹1,799
+                </p>
+
+            </div>
+
+
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <img
+                    src="https://images.unsplash.com/photo-1598033129183-c4f50c736f10?auto=format&fit=crop&w=500&q=80"
+                    alt="Shirt">
+                    <span class="sale">
+                        Sale
+                    </span>
+
+                    <button class="heart"
+                            onclick="addFavourite(this)">
+                        ♡
+                    </button>
+
+                </div>
+
+                <h3>
+                    Classic White Shirt
+                </h3>
+
+                <p>
+                    ₹999
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- NEWSLETTER -->
+
+    <section class="newsletter">
+
+        <h2>
+            Join Our Newsletter
+        </h2>
+
+        <p>
+            Sign up for our email newsletter
+            to receive exclusive offers.
+        </p>
+
+        <div class="newsletter-form">
+
+            <input
+            type="email"
+            id="newsletterEmail"
+            placeholder="Enter your email">
+
+            <button onclick="subscribe()">
+                Subscribe
+            </button>
+
+        </div>
+
+        <p id="newsletterMessage"></p>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <h2>
+            Nostra
+        </h2>
+
+        <p>
+            Fashion that defines your style.
+        </p>
+
+        <div class="footer-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="collections.html">
+                Collections
+            </a>
+
+            <a href="contact.html">
+                Contact Us
+            </a>
+
+        </div>
+
+        <p>
+            © 2026 Nostra. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

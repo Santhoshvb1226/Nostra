@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Nostra - Collections</title>
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+<body>
+
+
+    <!-- OFFER -->
+
+    <div class="offer-bar">
+
+        <p>
+            Sign Up and Get 20% OFF on your first Order
+        </p>
+
+    </div>
+
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar">
+
+        <h1 class="logo">
+            Nostra
+        </h1>
+
+        <div class="nav-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="index.html#new-arrivals">
+                New Arrival
+            </a>
+
+            <a href="index.html#most-wanted">
+                Most Wanted
+            </a>
+
+            <a href="collections.html">
+                Collections
+            </a>
+
+            <a href="contact.html">
+                Contact Us
+            </a>
+
+        </div>
+
+        <button class="menu-btn"
+                onclick="openMenu()">
+
+            ☰
+
+        </button>
+
+    </nav>
+
+
+    <!-- MOBILE MENU -->
+
+    <div class="mobile-menu"
+         id="mobileMenu">
+
+        <button onclick="closeMenu()"
+                class="close-btn">
+            X
+        </button>
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="index.html#new-arrivals">
+            New Arrival
+        </a>
+
+        <a href="index.html#most-wanted">
+            Most Wanted
+        </a>
+
+        <a href="collections.html">
+            Collections
+        </a>
+
+        <a href="contact.html">
+            Contact Us
+        </a>
+
+    </div>
+
+
+    <!-- COLLECTIONS -->
+
+    <section class="collections">
+
+        <!-- FILTER SIDEBAR -->
+
+        <aside class="filter-sidebar">
+
+            <h2>
+                Occasion
+            </h2>
+
+            <label>
+                <input type="checkbox"
+                       value="summer"
+                       onchange="filterCollection()">
+
+                Summer
+            </label>
+
+            <label>
+                <input type="checkbox"
+                       value="party"
+                       onchange="filterCollection()">
+
+                Party
+            </label>
+
+            <label>
+                <input type="checkbox"
+                       value="beach"
+                       onchange="filterCollection()">
+
+                Beach
+            </label>
+
+
+            <h2>
+                Colors
+            </h2>
+
+            <label>
+                <input type="checkbox"
+                       value="red"
+                       onchange="filterCollection()">
+
+                Red
+            </label>
+
+            <label>
+                <input type="checkbox"
+                       value="blue"
+                       onchange="filterCollection()">
+
+                Blue
+            </label>
+
+            <label>
+                <input type="checkbox"
+                       value="white"
+                       onchange="filterCollection()">
+
+                White
+            </label>
+
+            <label>
+                <input type="checkbox"
+                       value="green"
+                       onchange="filterCollection()">
+
+                Green
+            </label>
+
+        </aside>
+
+
+        <!-- PRODUCTS -->
+
+        <main class="collection-main">
+
+            <input
+            type="text"
+            id="searchInput"
+            class="search"
+            placeholder="Search products..."
+            onkeyup="filterCollection()">
+
+
+            <div class="collection-grid"
+                 id="collectionGrid">
+
+
+                <!-- PRODUCT -->
+
+                <div class="collection-product"
+                     data-tags="summer beach blue">
+
+                    <img
+                    src="https://images.unsplash.com/photo-1603252109303-2751441dd157?auto=format&fit=crop&w=500&q=80">
+
+                    <h3>
+                        Floral Summer Shirt
+                    </h3>
+
+                    <p>
+                        ₹720
+                    </p>
+
+                </div>
+
+
+                <div class="collection-product"
+                     data-tags="summer green">
+
+                    <img
+                    src="https://images.unsplash.com/photo-1598033129183-c4f50c736f10?auto=format&fit=crop&w=500&q=80">
+
+                    <h3>
+                        Summer White Shirt
+                    </h3>
+
+                    <p>
+                        ₹820
+                    </p>
+
+                </div>
+
+
+                <div class="collection-product"
+                     data-tags="party red">
+
+                    <img
+                    src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=500&q=80">
+                    <h3>
+                        Party Floral Shirt
+                    </h3>
+
+                    <p>
+                        ₹899
+                    </p>
+
+                </div>
+
+
+                <div class="collection-product"
+                     data-tags="summer white">
+
+                    <img
+                    src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?auto=format&fit=crop&w=500&q=80">
+
+                    <h3>
+                        White Summer Shirt
+                    </h3>
+
+                    <p>
+                        ₹799
+                    </p>
+
+                </div>
+
+
+                <div class="collection-product"
+                     data-tags="beach blue">
+
+                    <img
+                    src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=500&q=80">
+
+                    <h3>
+                        Beach White T-Shirt
+                    </h3>
+
+                    <p>
+                        ₹699
+                    </p>
+
+                </div>
+
+
+                <div class="collection-product"
+                     data-tags="party white">
+
+                    <img
+                    src="https://images.unsplash.com/photo-1503341504253-dff4815485f1?auto=format&fit=crop&w=500&q=80">
+
+                    <h3>
+                        Party BlackWear
+                    </h3>
+
+                    <p>
+                        ₹999
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </main>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <h2>
+            Nostra
+        </h2>
+
+        <p>
+            Fashion that defines your style.
+        </p>
+
+        <p>
+            © 2026 Nostra. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

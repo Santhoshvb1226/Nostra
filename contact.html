@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Nostra - Contact</title>
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+<body>
+
+
+    <!-- OFFER -->
+
+    <div class="offer-bar">
+
+        <p>
+            Sign Up and Get 20% OFF on your first Order
+        </p>
+
+    </div>
+
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar">
+
+        <h1 class="logo">
+            Nostra
+        </h1>
+
+        <div class="nav-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="index.html#new-arrivals">
+                New Arrival
+            </a>
+
+            <a href="index.html#most-wanted">
+                Most Wanted
+            </a>
+
+            <a href="collections.html">
+                Collections
+            </a>
+
+            <a href="contact.html">
+                Contact Us
+            </a>
+
+        </div>
+
+        <button class="menu-btn"
+                onclick="openMenu()">
+            ☰
+        </button>
+
+    </nav>
+
+
+    <!-- CONTACT -->
+
+    <section class="contact">
+
+        <h2>
+            Contact Us
+        </h2>
+
+        <p>
+            We'd love to hear from you.
+        </p>
+
+
+        <div class="contact-container">
+
+
+            <div class="contact-information">
+
+                <h3>
+                    Get In Touch
+                </h3>
+
+                <p>
+                    📍 Chennai, Tamilnadu
+                </p>
+
+                <p>
+                    📧 support@nostra.com
+                </p>
+
+                <p>
+                    📞 +91 *****133
+                </p>
+
+            </div>
+
+
+            <form id="contactForm"
+                  onsubmit="submitContact(event)">
+
+                <input
+                type="text"
+                id="name"
+                placeholder="Your Name">
+
+                <small id="nameError"></small>
+
+
+                <input
+                type="email"
+                id="email"
+                placeholder="Your Email">
+
+                <small id="emailError"></small>
+
+
+                <input
+                type="text"
+                id="subject"
+                placeholder="Subject">
+
+
+                <textarea
+                id="message"
+                placeholder="Your Message"></textarea>
+
+                <small id="messageError"></small>
+
+
+                <button type="submit">
+                    Send Message
+                </button>
+
+                <p id="successMessage"></p>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <h2>
+            Nostra
+        </h2>
+
+        <p>
+            Fashion that defines your style.
+        </p>
+
+        <p>
+            © 2026 Nostra. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
